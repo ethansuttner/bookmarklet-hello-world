@@ -8,7 +8,7 @@ function myFunction() {
   var i;
   var colors = ["red", "blue", "green", "yellow"];
   for (i = 0; i < myNodelist.length; i++) {
-    myNodelist[i].style.backgroundColor = getRandomInt(0,colors.length);
+    myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
   }
 }
 
