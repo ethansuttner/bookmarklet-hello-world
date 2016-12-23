@@ -27,7 +27,7 @@ function ajaxGet(myurl) {
     if (request.status >= 200 && request.status < 400) {
       // Success!
       var resp = request.responseText;
-      handleRespone(resp);
+      handleResponse(resp);
     } else {
       // We reached our target server, but it returned an error
     }
@@ -40,6 +40,6 @@ function ajaxGet(myurl) {
   request.send();
 }
 
-function handleResp(resp) {
+function handleResponse(resp) {
   console.log(resp);
 }
