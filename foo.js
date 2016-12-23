@@ -21,7 +21,7 @@ function getRandomInt(min, max) {
 
 function ajaxGet(myurl) {
   var request = new XMLHttpRequest();
-  request.open('GET', '/my/url', true);
+  request.open('GET', myurl, true);
 
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
