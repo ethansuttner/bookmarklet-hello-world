@@ -7,7 +7,7 @@ function myFunction() {
   for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
   }
-  // ajaxGet("http://loripsum.net/api/1/plaintext");
+  ajaxGet("http://localhost:8080/test");
 }
 
 
