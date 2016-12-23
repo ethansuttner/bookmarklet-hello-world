@@ -3,11 +3,11 @@ myFunction();
 function myFunction() {
   var myNodelist = document.getElementsByTagName("*");
   var i;
-  var colors = ["red", "blue", "green", "yellow"];
+  var colors = ["#EA4335", "#4285F4", "#34A853", "#FBBC05"];
   for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
   }
-  ajaxGet("http://loripsum.net/api/1/plaintext");
+  // ajaxGet("http://loripsum.net/api/1/plaintext");
 }
 
 
