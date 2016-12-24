@@ -2,14 +2,19 @@ myFunction();
 
 function myFunction() {
   var myNodelist = document.getElementsByTagName("*");
+  console.log(myNodelist);
   var i;
   var colors = ["#EA4335", "#4285F4", "#34A853", "#FBBC05"];
   for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
   }
   ajaxGet("http://localhost:8080/test");
-}
 
+  iterateCollection(myNodelist)(function(node, i) {
+      node.style.left = "10px";
+  });
+
+}
 
 // Returns a random integer between min (included) and max (excluded)
 // Using Math.round() will give you a non-uniform distribution!
@@ -42,4 +47,12 @@ function ajaxGet(myurl) {
 
 function handleResponse(resp) {
   console.log(resp);
+}
+
+function iterateCollection (collection) {
+  return function(f) {
+    for(var i = 0; collection[i]; i++) {
+      f(collection[i], i);
+    }
+  }
 }
