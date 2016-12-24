@@ -11,7 +11,7 @@ function myFunction() {
   ajaxGet("http://localhost:8080/test");
 
   iterateCollection(myNodelist)(function(node, i) {
-      node.style.left = "10px";
+      node.style.left = "100px";
   });
 
 }
