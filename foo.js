@@ -7,12 +7,12 @@ function myFunction() {
   var colors = ["#EA4335", "#4285F4", "#34A853", "#FBBC05"];
   for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].style.backgroundColor = "black" //colors[getRandomInt(0,colors.length)];
+    console.log(myNodelist[i]);
   }
   ajaxGet("http://localhost:8080/test");
-
-  for (var j = 0; myNodelist.length < j; j++) {
-    console.log(myNodelist[j].tagname);
-  }
+  // for (var j = 0; myNodelist.length < j; j++) {
+  //   console.log(myNodelist[j].tagname);
+  // }
 }
 
 // Returns a random integer between min (included) and max (excluded)
