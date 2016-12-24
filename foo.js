@@ -2,7 +2,7 @@ myFunction();
 
 function myFunction() {
   var myNodelist = document.getElementsByTagName("*");
-  console.log(myNodelist);
+  // console.log(myNodelist);
   var i;
   var colors = ["#EA4335", "#4285F4", "#34A853", "#FBBC05"];
   for (i = 0; i < myNodelist.length; i++) {
@@ -10,10 +10,9 @@ function myFunction() {
   }
   ajaxGet("http://localhost:8080/test");
 
-  iterateCollection(myNodelist)(function(node, i) {
-      node.style.left = "100px";
-  });
-
+  for (var j = 0; htmlCollectionArray.length < j; j++) {
+    console.log(myNodelist[j].tagname);
+  }
 }
 
 // Returns a random integer between min (included) and max (excluded)
