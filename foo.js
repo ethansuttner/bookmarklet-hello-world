@@ -8,7 +8,7 @@ function myFunction() {
   for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
     // console.log(myNodelist[i].innerText);
-    myNodelist[i].innerHTML = "";
+    myNodelist[i].text = "Foo";
   }
   // ajaxGet("http://localhost:8080/test");
   // for (var j = 0; myNodelist.length < j; j++) {
