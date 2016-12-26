@@ -6,7 +6,7 @@ function myFunction() {
   var i;
   var colors = ["#EA4335", "#4285F4", "#34A853", "#FBBC05"];
   for (i = 0; i < myNodelist.length; i++) {
-    myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
+    // myNodelist[i].style.backgroundColor = colors[getRandomInt(0,colors.length)];
     // console.log(myNodelist[i].innerText);
     myNodelist[i].text = "Foo";
   }
