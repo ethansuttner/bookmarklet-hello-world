@@ -9,7 +9,7 @@ function myFunction() {
     console.log(myNodelist[i].innerText);
     myNodelist[i].text = "Foo";
   }
-  // ajaxGet("http://localhost:8080/test");
+  ajaxGet("http://localhost:8080/test");
   // for (var j = 0; myNodelist.length < j; j++) {
   //   console.log(myNodelist[j].tagname);
   // }
